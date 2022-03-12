@@ -1,4 +1,4 @@
-package com.easypay.dockerspringwebboot;
+package com.easypay.dockerspringwebboot.resource;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
