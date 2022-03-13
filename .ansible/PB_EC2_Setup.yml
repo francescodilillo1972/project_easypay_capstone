@@ -1,0 +1,17 @@
+---
+- name: AWS EC2 instance setup
+  hosts: localhost
+  connection: local
+  tasks:
+  - name: launching ec2
+    ec2:
+      instance_type: t2.micro
+      key_name: Spring_EasyPay
+      image: ami-04505e74c0741db8d
+      region: us-east-1
+      vpc_subnet_id: subnet-0c6445dd2bf67027d
+      group: default
+      count: 3
+      wait: yes
+      assign_public_ip: yes
+
