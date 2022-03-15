@@ -9,7 +9,7 @@
       key_name: Spring_EasyPay
       image: ami-04505e74c0741db8d
       region: us-east-1
-      vpc_subnet_id: subnet-0c6445dd2bf67027d
+      vpc_subnet_id: subnet-0f9ca424fddf0de96
       group: default
       count: 3
       wait: yes
