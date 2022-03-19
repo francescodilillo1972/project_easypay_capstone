@@ -1,9 +1,9 @@
 [masters]
-master ansible_host=172.31.13.210 ansible_user=root
- 
+master ansible_host=ec2-23-21-84-165.compute-1.amazonaws.com ansible_user=root
+
 [workers]
-worker1 ansible_host=ec2-3-210-107-42.compute-1.amazonaws.com ansible_user=root
-worker2 ansible_host=ec2-184-73-56-216.compute-1.amazonaws.com ansible_user=root
+worker1 ansible_host=ec2-18-211-76-115.compute-1.amazonaws.com ansible_user=root
+worker2 ansible_host=ec2-54-173-200-115.compute-1.amazonaws.com ansible_user=root
  
 [all:vars]
 ansible_python_interpreter=/usr/bin/python3

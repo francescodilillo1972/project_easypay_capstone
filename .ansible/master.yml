@@ -7,7 +7,7 @@
     shell: "swapoff -a"
  
   - name: initialize the cluster
-    shell: kubeadm init --pod-network-cidr=10.244.0.0/16 >> cluster_initialized.txt
+    shell: kubeadm init --pod-network-cidr=172.31.0.0/16 --ignore-preflight-errors=NumCPU  --ignore-preflight-errors=Mem >> cluster_initialized.txt
     args:
      chdir: $HOME
      creates: cluster_initialized.txt
