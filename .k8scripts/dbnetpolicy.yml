@@ -1,0 +1,17 @@
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  namespace: infradeploy
+  name: allow-db-access
+spec:
+  podSelector:
+    matchLabels:
+      networking/allow-db-access: "true"
+#      app: easypay
+  ingress:
+  - from:
+    - podSelector:
+        matchLabels:
+          app: easypay
+
+

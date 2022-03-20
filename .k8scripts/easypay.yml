@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: easypay
+  name: easypay-pod
+  namespace: infradeploy
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: easypay
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: easypay
+    spec:
+      containers:
+      - image: francescodocker72/easypay_app
+        name: easypay-docker
+        ports:
+        - containerPort: 8080
+        resources:
+          requests:
+            cpu: 80m
+status: {}
+
+
